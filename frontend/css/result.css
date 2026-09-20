@@ -1,0 +1,112 @@
+.result-page {
+    min-height: calc(100vh - 72px);
+    padding: 70px 8%;
+}
+
+.result-header {
+    max-width: 1000px;
+    margin: 0 auto 45px;
+}
+
+.result-header h1 {
+    font-size: 52px;
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+}
+
+.result-filename {
+    color: #7f899d;
+    font-size: 15px;
+}
+
+.result-grid {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.result-card {
+    padding: 28px;
+
+    background: #121927;
+    border: 1px solid #222b3d;
+    border-radius: 12px;
+}
+
+.result-card h2 {
+    margin-bottom: 22px;
+    font-size: 21px;
+}
+
+.overview-card {
+    grid-column: span 2;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #222b3d;
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.info-row span {
+    color: #7f899d;
+}
+
+.info-row strong {
+    text-align: right;
+}
+
+.result-card ul,
+.result-card ol {
+    padding-left: 22px;
+}
+
+.result-card li {
+    margin-bottom: 12px;
+    color: #aeb6c9;
+}
+
+.action-card {
+    grid-column: span 2;
+}
+
+.action-card li {
+    color: #f5f7ff;
+    font-weight: 500;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .result-page {
+        padding: 50px 5%;
+    }
+
+    .result-header h1 {
+        font-size: 40px;
+    }
+
+    .result-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .overview-card,
+    .action-card {
+        grid-column: span 1;
+    }
+}

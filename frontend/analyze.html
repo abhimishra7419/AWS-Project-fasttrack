@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Analyze Notice | ActionLens</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/upload.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            ActionLens
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="analyze.html">Analyze</a>
+        </nav>
+
+    </header>
+
+
+    <main class="upload-page">
+
+        <section class="upload-container">
+
+            <p class="tagline">
+                ACTIONLENS ANALYZER
+            </p>
+
+            <h1>
+                Analyze a Notice
+            </h1>
+
+            <p class="upload-description">
+                Upload a scholarship, internship, exam, competition,
+                or other opportunity notice.
+            </p>
+
+
+            <div class="upload-box">
+
+                <div class="upload-icon">
+                    ↑
+                </div>
+
+                <h2>
+                    Upload your notice
+                </h2>
+
+                <p>
+                    PDF, PNG or JPEG
+                </p>
+
+
+                <label for="file-input" class="primary-btn">
+                    Choose File
+                </label>
+
+                <input
+                    type="file"
+                    id="file-input"
+                    accept=".pdf,.png,.jpg,.jpeg"
+                    hidden
+                >
+
+
+                <p id="file-name" class="file-name">
+                    No file selected
+                </p>
+
+            </div>
+
+
+            <button id="analyze-btn" class="analyze-btn" disabled>
+                Analyze Notice
+            </button>
+
+
+            <p id="upload-status" class="upload-status"></p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 ActionLens · Built by the ActionLens Team
+        </p>
+
+    </footer>
+
+
+    <script src="js/upload.js"></script>
+
+</body>
+
+</html>
